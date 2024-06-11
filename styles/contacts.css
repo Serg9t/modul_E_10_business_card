@@ -1,0 +1,60 @@
+.contacts {
+    background-color: var(--bg-main-grey);
+    margin-bottom: 60px;
+    padding: 40px 10px;
+    text-align: center;
+    color: var(--color-main-black);
+}
+
+.contacts-title {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    letter-spacing: 0.7cap;
+}
+
+.name {
+    margin: 0 auto;
+    width: 360px;
+    height: 30px;
+    background-color: var(--color-main-black);
+    color: var(--bg-main);
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+.contacts-wrap {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact {
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--font-color-grey);
+}
+
+.contact:hover {
+    color: lightslategrey;
+}
+
+.info {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-main-black);
+    margin: 10px 0;
+}
+
+.git {
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--font-color-grey);
+}
+
+.git:hover {
+    color: lightslategray;
+}

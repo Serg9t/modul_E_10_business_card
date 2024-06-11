@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Business card</title>
+</head>
+
+<body>
+    <header class="header" aria-label="header">
+        <div class="container">
+            <nav class="nav" aria-label="header navigation">
+                <ul class="nav-list" aria-label="header navigation list">
+                    <li>
+                        <a href="#home-id" class="nav-link" aria-label="link to home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#skills-id" class="nav-link" aria-label="link to skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#hobby-id" class="nav-link" aria-label="link to portfolio">Hobby</a>
+                    </li>
+                    <li>
+                        <a href="#contacts-id" class="nav-link" aria-label="link to contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- mobile version header menu -->
+    <div class="mobile-navigation" aria-label="mobile-navigation">
+        <label for="toggler-id" aria-label="open-close mobile-navigation menu">
+            <svg class="mobile-navigation-burger" aria-label="burger icon">
+                <use href="img/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+
+        <input type="checkbox" id="toggler-id" class="mobile-navigation-toggler">
+
+        <nav class="mobile-navigation-menu" aria-label="mob header navigation">
+            <ul class="mobile-navigation-list" aria-label="mob header navigation list">
+                <li>
+                    <a href="#home-id" class="mobile-navigation-link" aria-label="link to home">Home</a>
+                </li>
+                <li>
+                    <a href="#skills-id" class="mobile-navigation-link" aria-label="link to history">Skills</a>
+                </li>
+                <li>
+                    <a href="#hobby-id" class="mobile-navigation-link" aria-label="link to portfolio">Hobby</a>
+                </li>
+                <li>
+                    <a href="#contacts-id" class="mobile-navigation-link" aria-label="link to contacts">Contacts</a>
+                </li>
+            </ul>
+
+            <label for="toggler-id" class="mobile-navigation-close" aria-label="open-close mobile-navigation menu">
+                <svg class="mobile-navigation-cross" aria-label="cross icon">
+                    <use href="img/sprites.svg#cross-icon"></use>
+                </svg>
+            </label>
+        </nav>
+    </div>
+
+    <main aria-label="main">
+        <section class="home" arial-label="home section" id="home-id">
+            <div class="container">
+                <h1 class="home-title" aria-label="title">Web Development</h1>
+                <p class="home-text" aria-label="description">
+                    коротко обо мне...
+                </p>
+
+                <div class="home-about">
+                    <img class="home-photo" src="img/myphoto.webp" alt="my photo">
+
+                    <div class="desc-wrapper" aria-label="about me description">
+                        <p class="home-desc">
+                            Привет! Моё имя Сергей. Я занимаюсь веб-разработкой, пишу backend-приложения на <b>Python</b> и <b>Django</b>, a также занимаюсь вёрсткой и  осваиваю <b>Frontend</b>.
+                            <br>
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skill" aria-label="skills section" id="skills-id">
+            <div class="container">
+                <h2 class="skill-title" aria-label="skills title">
+                    Skills
+                </h2>
+
+                <div class="slill-wrap" aria-label="my skills">
+                    <div class="skill-basic">
+                        <h3 class="skill-about">Мои основные навки:</h3>
+                        <ul class="skill-list">
+                            <li class="technology">Python</li>
+                            <li class="technology">Django</li>
+                            <li class="technology">PostgreSQL</li>
+                            <li class="technology">Html</li>
+                            <li class="technology">CSS</li>
+                            <li class="technology">JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-desc_wrap" aria-label="skills description">
+                        <p class="skill-desc">
+                            Это не весь список технологий, которые знаю...
+                            <br>
+                            Осваиваю различные библиотеки и фреймворки по <b>Python</b> и <b>JavaScript</b> и 
+                            не только.
+                            <br>
+                            <br>
+                            Мои проекты на <a class="git" href="https://github.com/Serg9t" target="_blank">GitHub</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hobby" aria-label="hobby section" id="hobby-id">
+            <div class="container">
+                <h2 class="hobby-title">Hobby</h2>
+                <div class="hobby-cards">
+                    <figure class="card">
+                        <h3 class="card-title">Programming</h3>
+                        <p class="card-desc">
+                            Программирование является для меня не только целью для работы, a также и моим увлечением.
+                            Постоянно совершенствуюсь в этом направлении...
+                        </p>
+                        <img class="card-img" src="img/prog_1.jpg" alt="programming image">
+                    </figure>
+
+                    <figure class="card item-2">
+                        <h3 class="card-title">Music</h3>
+                        <p class="card-desc">
+                            Занимаюсь музыкой, а именно - играю на гитаре и бас-гитаре...
+                            <br>
+                            Раньше играл в rock/metal группах.
+                        </p>
+                        <img class="card-img" src="img/guitar.jpg" alt="guitar image">
+                    </figure>
+
+                    <figure class="card">
+                        <h3 class="card-title">Astronomy</h3>
+                        <p class="card-desc">
+                            С детства увлекаюсь астрономией. Изучаю научные статьи в этой области...
+                            <br>
+                            Хочу построить с нуля телескоп рефлектор.
+                        </p>
+                        <img class="card-img" src="img/astro_1.jpg" alt="astronomy image">
+                    </figure>
+
+                    <figure class="card item-4">
+                        <h3 class="card-title">Aviation</h3>
+                        <p class="card-desc">
+                            Также с детства увлекаюсь авиацией, авиамоделизмом и моделированием.
+                            Делал модели планерного типа, проектировал свои чертежи.
+                        </p>
+                        <img class="card-img" src="img/air.jpg" alt="aviation image">
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contacts" aria-label="contacts section" id="contacts-id">
+        <div class="container">
+            <h2 class="contacts-title">Contacts</h2>
+            <h3 class="name">Сокур Сергей Александрович</h3>
+
+            <address class="contacts-wrap">
+                <a class="contact" href="https://api.whatsapp.com/send?phone=9150959923" target="_blank">WhatsApp</a>
+                <a class="contact" href="mailto:ssokurr@mail.ru" target="_blank">@mail.ru</a>
+                <a class="contact" href="mailto:serggg9871@gmail.com" target="_blank">GMail</a>
+            </address>
+            <p class="info">...также мои проекты можно увидеть на моём гитхабе</p>
+            <a class="git" href="https://github.com/Serg9t" target="_blank">GitHub</a>
+        </div>
+
+    </footer>
+</body>
+</html>
